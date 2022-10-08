@@ -65,10 +65,8 @@ export const RegisterForm = () => {
             >
                 Register
             </PrimaryButton>
-
         </div>
     </form>
-
         </>
     );
 };
