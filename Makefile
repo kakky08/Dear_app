@@ -10,8 +10,10 @@ next:
 dev:
 	docker-compose exec front yarn dev
 
-tailwind:
+front:
 	docker-compose exec front sh
+
+tailwind:
 	yarn add -D tailwindcss@latest postcss@latest autoprefixer@latest
 	yarn tailwindcss init -p
 	exit
