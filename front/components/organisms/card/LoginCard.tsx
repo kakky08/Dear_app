@@ -1,5 +1,4 @@
-import { LoginForm } from '../../molecules/form/Login'
-import { HeaderAuth } from '../../molecules/layout/header/HeaderAuth';
+import { LoginForm } from '../../molecules/form/LoginForm'
 
 export const LoginCard = () => {
     return (
