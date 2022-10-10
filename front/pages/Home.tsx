@@ -5,7 +5,7 @@ export default function Home() {
     return (
         <SecondaryLayout
             menu='Log out'
-            link='/Register'
+            link='/Login'
         >
             <LoginCard></LoginCard>
         </SecondaryLayout>

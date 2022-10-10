@@ -2,9 +2,9 @@ import { FC, useState } from "react";
 import { LayoutTypes } from "../../types/components/template/LayoutTypes";
 import { PrimaryHeader } from "../molecules/layout/header/PrimaryHeader";
 import { ParsonCard } from '../organisms/card/ParsonCard';
-import { ParsonSidebar } from '../organisms/sidebar/ParsonSidebar';
+import { HomeSidebar } from '../organisms/sidebar/HomeSidebar';
 
-export const SecondaryLayout: FC<LayoutTypes> = (props,) => {
+export const SecondaryLayout: FC<LayoutTypes> = (props) => {
     const { children, menu, link } = props;
     const [isOpen, setIsOpen] = useState<boolean>(false);
 
@@ -53,7 +53,7 @@ export const SecondaryLayout: FC<LayoutTypes> = (props,) => {
             <div className="bg-white h-full">
                 <div className="flex text-gray-800 h-full">
                     {/* サイドバー */}
-                    <ParsonSidebar
+                    <HomeSidebar
                         isOpen={isOpen}
                     />
                     {/* メインコンテンツ */}
