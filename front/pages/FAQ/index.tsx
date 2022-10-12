@@ -96,6 +96,7 @@ const FAQ: FC = () => {
                                         </span>
                                         </div>
 
+
                                         <p className="text-gray-500 pb-4">This is a section of some simple filler text, also known as placeholder text. It shares some characteristics of a real written text but is random or otherwise generated.</p>
 
                                         <div class="w-full py-8 px-4 pb-4 ml-auto text-gray-500 md:w-1/3 flex">
