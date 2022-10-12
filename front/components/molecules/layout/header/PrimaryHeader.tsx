@@ -22,21 +22,21 @@ export const PrimaryHeader: FC<PrimaryHeaderTypes> = (props) => {
 
     return (
         <>
-            <nav className="bg-red-800 g-white shadow ">
+            <nav className="bg-red-800 shadow ">
                 <div className="mx-auto  px-8 lg:px-16">
-                    <div className="flex items-center justify-between h-16">
+                    <div className="flex h-16 items-center justify-between">
 
-                        <div className="w-full justify-between flex items-center">
+                        <div className="flex w-full items-center justify-between">
                             {/* ハンバーガーメニュー */}
                             <div>
                                 <button
                                     type="button"
                                     onClick={() => changeState(!isOpen)}
-                                    className={`${isOpen ? 'items-end justify-end': 'items-center justify-center'} block sm:hidden shadow-sm flex w-full px-4 py-2`}
+                                    className={`${isOpen ? 'items-end justify-end': 'items-center justify-center'}  flex w-full px-4 py-2 shadow-sm sm:hidden`}
                                     id="options-menu"
                                 >
                                     {(isOpen) && (
-                                        <svg className="w-8 h-8 over:bg-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <svg className="over:bg-gray-500 h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
                                     </svg>
                                     )}
@@ -57,7 +57,7 @@ export const PrimaryHeader: FC<PrimaryHeaderTypes> = (props) => {
                             <div className="md:block">
                                 <div className="ml-10 flex items-baseline space-x-4">
                                     <Link href={link}>
-                                        <a className="text-gray-300  hover:text-gray-800 dark:hover:text-white px-3 py-2 rounded-md text-sm font-medium">
+                                        <a className="rounded-md  px-3 py-2 text-sm font-medium text-gray-300 hover:text-gray-800 dark:hover:text-white">
                                             { menu }
                                         </a>
                                     </Link>

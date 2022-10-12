@@ -5,7 +5,7 @@ import { PrimaryLabel } from "../../atoms/label/PrimaryLabel";
 export const LoginForm = () => {
     return (
 <>
-    <form className="max-w-lg border rounded-lg mx-auto">
+    <form className="mx-auto max-w-lg rounded-lg border">
       <div className="flex flex-col gap-4 p-4 md:p-8">
         <PrimaryLabel
             htmlFor={"email"}
