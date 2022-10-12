@@ -21,23 +21,23 @@ export const HomeSidebar: FC<ParsonSidebarTypes>= (props) => {
 
 
     return (
-        <div className={`${isOpen ? "block sm:block h-full" : 'hidden sm:block'} flex-col w-80 px-4 py-8 bg-white border-r dark:bg-gray-900 dark:border-gray-700 min-h-screen`}>
+        <div className={`${isOpen ? "block h-full sm:block" : 'hidden sm:block'} min-h-screen w-80 flex-col border-r bg-white px-4 py-8 dark:border-gray-700 dark:bg-gray-900`}>
             <div className="relative mt-6">
                 <span className="absolute inset-y-0 left-0 flex items-center pl-3">
-                    <svg className="w-5 h-5 text-gray-400" viewBox="0 0 24 24" fill="none">
+                    <svg className="h-5 w-5 text-gray-400" viewBox="0 0 24 24" fill="none">
                         <path d="M21 21L15 15M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                     </svg>
                 </span>
 
-                <input type="text" className="w-full py-2 pl-10 pr-4 text-gray-700 bg-white border rounded-md dark:bg-gray-900 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 dark:focus:border-blue-300 focus:ring-blue-300 focus:ring-opacity-40 focus:outline-none focus:ring" placeholder="Search" />
+                <input type="text" className="w-full rounded-md  bg-white py-2 pl-10 pr-4 text-gray-700 focus:border-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:opacity-40 dark:border-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:focus:border-blue-300" placeholder="Search" />
             </div>
 
-            <div className="flex flex-col justify-between flex-1 mt-6">
+            <div className="mt-6 flex flex-1 flex-col justify-between">
                 <nav>
                     {menus.map((menu, index) => (
                         <Link key={index} href={menu.link}>
-                            <a className="flex items-center px-4 py-2 mt-5 text-gray-600 transition-colors duration-300 transform rounded-md dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-gray-700 dark:hover:text-gray-200 hover:text-gray-700">
-                                <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <a className="mt-5 flex items-center rounded-md px-4 py-2 text-gray-600 transition-colors duration-300 hover:bg-gray-200 hover:text-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-200">
+                                <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d={menu.icon} stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                                 </svg>
                                 <span className="mx-4 font-medium">{ menu.name }</span>

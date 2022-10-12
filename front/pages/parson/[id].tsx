@@ -33,8 +33,8 @@ const changeState = (isState:boolean) => {
             {/* ヘッダー - end*/}
 
             {/* コンテンツ - start*/}
-            <div className="bg-white h-full">
-                <div className="flex text-gray-800 h-full">
+            <div className="h-full bg-white">
+                <div className="flex h-full text-gray-800">
                     {/* サイドバー - start*/}
                     <ParsonSidebar
                         isOpen={isOpen}

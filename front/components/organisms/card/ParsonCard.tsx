@@ -6,10 +6,10 @@ import { ParsonCardTypes } from '../../../types/components/organisms/card/Parson
 export const ParsonCard: FC<ParsonCardTypes> = (props) => {
     const { key, id, name, photo, relationship } = props;
     return (
-            <div className="w-full max-w-xs text-center mx-auto" key={key}>
+            <div className="mx-auto w-full max-w-xs text-center" key={key}>
                 <Link href={`/parson/${id}`}>
                     <a className=''>
-                        <Image className="object-cover object-center w-full h-48 mx-auto rounded-lg" width="240px" height="144px" src={photo} alt={`${name}の画像`} />
+                        <Image className="mx-auto h-48 w-full rounded-lg object-cover object-center" width="240px" height="144px" src={photo} alt={`${name}の画像`} />
                     </a>
                 </Link>
                 <div className="mt-2">

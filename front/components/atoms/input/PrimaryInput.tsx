@@ -7,7 +7,7 @@ export const PrimaryInput: FC<PrimaryInputTypes> = (props) => {
             name={name}
             type={type}
             placeholder={placeholder}
-            className={`${width} ${margin} bg-gray-50 text-gray-800 border focus:ring ring-indigo-300 rounded outline-none transition duration-100 px-3 py-2 `}
+            className={`${width} ${margin} rounded border bg-gray-50 px-3 py-2 text-gray-800 outline-none ring-indigo-300 transition duration-100 focus:ring `}
         />
     );
 

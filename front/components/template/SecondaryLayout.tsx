@@ -50,8 +50,8 @@ export const SecondaryLayout: FC<LayoutTypes> = (props) => {
                 isOpen={isOpen}
             />
 
-            <div className="bg-white h-full">
-                <div className="flex text-gray-800 h-full">
+            <div className="h-full bg-white">
+                <div className="flex h-full text-gray-800">
                     {/* サイドバー */}
                     <HomeSidebar
                         isOpen={isOpen}
@@ -59,9 +59,9 @@ export const SecondaryLayout: FC<LayoutTypes> = (props) => {
                     {/* メインコンテンツ */}
                     <div className="w-full">
                         <section className="bg-white">
-                            <div className="container px-6 pb-8 pt-20 mx-auto">
-                                <h2 className="text-3xl font-semibold text-center text-gray-800 capitalize lg:text-4xl mb-16">My dears</h2>
-                                <div className="grid gap-8 mt-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+                            <div className="container mx-auto px-6 pb-8 pt-20">
+                                <h2 className="mb-16 text-center text-3xl font-semibold capitalize text-gray-800 lg:text-4xl">My dears</h2>
+                                <div className="mt-8 grid gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
                                     {dears.map((dear, index) => (
                                         <ParsonCard
                                             key={index}

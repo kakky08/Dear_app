@@ -10,8 +10,8 @@ export const Layout: FC<LayoutTypes> = (props) => {
                 menu={menu}
                 link={link}
             />
-            <div className="bg-white py-20 h-[calc(100%_-_48px)]">
-                <div className="max-w-screen-2xl px-4 md:px-8 mx-auto h-100%">
+            <div className="h-[calc(100%_-_48px)] bg-white py-20">
+                <div className="mx-auto h-full max-w-screen-2xl px-4 md:px-8">
                     {children}
                 </div>
             </div>

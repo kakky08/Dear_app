@@ -30,14 +30,14 @@ export const ParsonSidebar: FC<ParsonSidebarTypes> = (props) => {
 
 
     return (
-        <div className={`${isOpen ? "block sm:block h-full" : 'hidden sm:block'} flex-col w-80 px-4 py-8 bg-white border-r dark:bg-gray-900 dark:border-gray-700 min-h-screen`}>
+        <div className={`${isOpen ? "block h-full sm:block" : 'hidden sm:block'} min-h-screen w-80 flex-col border-r bg-white px-4 py-8 dark:border-gray-700 dark:bg-gray-900`}>
 
-            <div className="flex flex-col justify-between flex-1 mt-6">
+            <div className="mt-6 flex flex-1 flex-col justify-between">
                 <nav>
                     {menus.map((menu, index) => (
                         <Link key={index} href={menu.link}>
-                            <a className="flex items-center px-4 py-2 mt-5 text-gray-600 transition-colors duration-300 transform rounded-md dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-gray-700 dark:hover:text-gray-200 hover:text-gray-700">
-                                <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <a className="mt-5 flex items-center rounded-md px-4 py-2 text-gray-600 transition-colors duration-300 hover:bg-gray-200 hover:text-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-200">
+                                <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d={menu.icon} stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                                 </svg>
                                 <span className="mx-4 font-medium">{menu.name}</span>

@@ -7,7 +7,7 @@ export const Logo: FC<LogoTypes> = (props) => {
     const { href } = props;
     return (
         <Link href={href}>
-            <a className="flex-shrink-0">
+            <a className="shrink-0">
                 <Image src="/images/logo.png" width="100px" height="20px" alt="DearアプリのLogo画像" />
             </a>
         </Link>

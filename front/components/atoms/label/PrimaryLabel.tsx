@@ -6,7 +6,7 @@ export const PrimaryLabel: FC<PrimaryLabelTypes> = (props) => {
     return (
         <label
             htmlFor={ htmlFor }
-            className="inline-block text-gray-800 text-sm sm:text-base mb-2"
+            className="mb-2 inline-block text-sm text-gray-800 sm:text-base"
         >
             { children }
         </label>
